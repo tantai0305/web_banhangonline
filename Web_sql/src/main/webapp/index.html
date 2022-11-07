@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+  <link rel="stylesheet" type = "text/css" href="style.css">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- header-->
+	<div class = "header">
+          <!-- <img src = "images/banner phukien.jpg" width = "100%" height = "180px"> -->
+        </div> 
+        
+ <!-- menu-->    
+        <div class = "menu">
+           <ul class = "list_menu">
+            <li> <a href="index.php">Trang chu</a></li>
+         
+            <li> <a href="index.php?quanly=giohang">Gio Hang</a></li>
+             <li> <a href="index.php?dangxuat=1">Dang xuat</a></li>
+             <li> <a href="index.php?quanly=dangky">Dang ky</a></li>
+            <li> <a href="index.php?quanly=tintuc">Tin tuc</a></li>
+            <li> <a href="index.php?quanly=lienhe">Lien he</a></li>
+            
+          
+           
+           
+           </ul>
+           <p>
+            <form action = "index.php?quanly=timkiem" method = "POST">
+               <input type = "text" placeholder = "Tim kiem san pham..." name = "tukhoa">
+               <input type = "submit" name = "timkiem" value = "Tim kiem">
+           </form>
+         </p>
+        </div>
+        
+<!-- main -->     
+
+        <div id = "main" >
+            <div class = "sidebar"> 
+             <ul class = "list_sidebar">
+            	<li> <a href="">Op lung</a></li>
+            	<li> <a href="">Kinh cuong luc</a></li>
+            	<li> <a href="">Man hinh dien thoai</a></li>
+           	</ul>
+            </div>
+           <div class = "maincontent">
+          		 <h3> San pham moi nhat</h3>
+          		 <ul class = "product_list">
+	          		  <li>
+		                <a href ="index.php?quanly=sanpham&id=<?php echo $row['id_sanpham']?>">
+			           		 <img src = "./images/tainghe001.jpg">
+			                <p class = "title_product"> Ten san pham :Tai nghe </p>
+			                <P class = "price_product">Gia : 1.000.000vnd</P>
+			                <p style = "text-align : center; corlor:#000"></p>
+	                	</a>
+	            	</li>
+	            	
+	            		  <li>
+		                <a href ="index.php?quanly=sanpham&id=<?php echo $row['id_sanpham']?>">
+			           		 <img src = "./images/tainghe001.jpg">
+			                <p class = "title_product"> Ten san pham :Tai nghe </p>
+			                <P class = "price_product">Gia : 1.000.000vnd</P>
+			                <p style = "text-align : center; corlor:#000"></p>
+	                	</a>
+	            	</li>
+	            	
+	            		  <li>
+		                <a href ="index.php?quanly=sanpham&id=<?php echo $row['id_sanpham']?>">
+			           		 <img src = "./images/tainghe001.jpg">
+			                <p class = "title_product"> Ten san pham :Tai nghe </p>
+			                <P class = "price_product">Gia : 1.000.000vnd</P>
+			                <p style = "text-align : center; corlor:#000"></p>
+	                	</a>
+	            	</li>
+          		 </ul>
+           </div>
+        </div>
+ <!-- footer-->       
+   <div class = "clear"></div>
+   <div class = "footer" >
+        <p class = "footer_copyright"> Nguyen Tan Tai</p>
+   </div>
+
+   
+</body>
+</html>
